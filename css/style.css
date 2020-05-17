@@ -83,6 +83,7 @@ a {
   color: var(--header-color);
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .login-btn:hover {
@@ -115,6 +116,7 @@ a {
 }
 
 .header-link {
+  display: block;
   font-size: 14px;
   line-height: 1.2;
   color: var(--header-color);
@@ -123,13 +125,104 @@ a {
   padding: 16px 50px;
 }
 
-.header-link::first-letter {
-  text-transform: uppercase;
-}
-
 .header-link__br {
   display: block;
 }
 
 /* MAIN */
 /* Section */
+.partners {
+  text-align: center;
+  padding-bottom: 56px;
+}
+
+.title-section {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--heading-color);
+  margin-bottom: 18px;
+}
+
+.partners-list {
+  margin-bottom: 28px;
+}
+
+.partners-list__item {
+  display: inline-block;
+  width: 214px;
+}
+
+.partners-list__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.partners-list__item__img__wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 22px;
+}
+
+.partners-list__item__img {
+  border-radius: 50%;
+}
+
+.partners-list__item__img__wrapper::before {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-tv::before {
+  background-image: url('../img/icon/tv.png');
+  background-color: #ff4e50;
+}
+
+.ico-flask::before {
+  background-image: url('../img/icon/flask.png');
+  background-color: #ffa507;
+}
+
+.ico-cofee::before {
+  background-image: url('../img/icon/coffee.png');
+  background-color: #1cd7ad;
+}
+
+.ico-telegram::before {
+  background-image: url('../img/icon/telegram.png');
+  background-color: #4e73db;
+}
+
+.partners-list__item__title {
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.partners-list__item__description {
+  font-family: var(--second-font);
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--description-color);
+}
+
+.partners-button {
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--button-color);
+  background-color: transparent;
+  border: 2px solid var(--button-color);
+  border-radius: 20px;
+  cursor: pointer;
+}
