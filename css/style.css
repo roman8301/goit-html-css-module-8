@@ -226,3 +226,9 @@ a {
   border-radius: 20px;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 758px;
+  }
+}
