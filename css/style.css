@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url('../fonts/roboto-v20-latin-300.woff2') format('woff2'),
+    url('../fonts/roboto-v20-latin-300.woff') format('woff');
+}
+
+:root {
+  --main-font: 'Montserrat', sans-serif;
+  --second-font: 'Roboto', sans-serif;
+  --header-color: #fff;
+  --heading-color: #333;
+  --description-color: #666;
+  --button-color: #ff4e50;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  background-image: url('../img/bg/bg_mobile.png');
+  background-color: #1a1915;
+  background-size: cover;
+  color: var(--header-color);
+  padding: 20px 0 138px 0;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.header-top {
+  margin-bottom: 36px;
+}
+
+.header-btn__wrapper {
+  margin-bottom: 116px;
+}
+
+.login-btn {
+  width: 94px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--header-color);
+  border: none;
+  background-color: transparent;
+}
+
+.login-btn:hover {
+  border: 2px solid var(--header-color);
+  border-radius: 18px;
+}
+
+.upper::first-letter {
+  text-transform: uppercase;
+}
+
+.site-logo {
+  color: var(--header-color);
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.site-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.site-description {
+  font-family: var(--second-font);
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.header-link {
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--header-color);
+  background-color: var(--button-color);
+  border-radius: 20px;
+  padding: 16px 50px;
+}
+
+.header-link::first-letter {
+  text-transform: uppercase;
+}
+
+.header-link__br {
+  display: block;
+}
+
+/* MAIN */
+/* Section */
