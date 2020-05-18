@@ -342,9 +342,4 @@ a {
   .partners-list__item {
     width: 220px;
   }
-
-  .lucas,
-  .bradley {
-    order: 1;
-  }
 }
