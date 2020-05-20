@@ -241,8 +241,7 @@ a {
 }
 
 .partners-button {
-  width: 280px;
-  height: 40px;
+  padding: 16px 70px;
   font-size: 14px;
   line-height: 1.2;
   color: var(--button-color);
@@ -329,6 +328,10 @@ a {
 @media (max-width: 961px) {
   .partners-list__item:nth-last-child(2n) {
     margin-bottom: 58px;
+  }
+
+  .partners-button {
+    padding: 16px 54px;
   }
 }
 
